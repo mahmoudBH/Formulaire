@@ -1,0 +1,120 @@
+body {
+    margin-top: 125px;
+    margin-bottom: 102px;
+    width: 100%;
+    height: 100vh;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+    background-image: url('download.png');
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    max-width: 500px;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px; 
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    margin: 0.5rem 0;
+    color: #ddd; /* Couleur du texte */
+}
+
+input {
+    margin: 10px 0 20px 0; /* Ajouter une marge basse de 20px */
+    width: calc(100% - 20px);
+    min-height: 2em;
+    padding: 8px;
+    background-color: #333; /* Couleur de fond */
+    border: 1px solid #444; /* Bordure */
+    color: #fff; /* Couleur du texte */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    height: 2.5em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition au survol */
+}
+
+input[type="submit"]:hover {
+    background-color: #555; /* Couleur au survol */
+}
+
+a {
+    color: #dfdfe2;
+}
+
+.input-container {
+    position: relative;
+}
+
+.validation-message {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.container {
+    text-align: center;
+}
+  
+  .shadow__btn {
+    display: block;
+    margin: 0 auto; 
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: rgb(226, 0, 0);
+    box-shadow: 0 0 25px rgb(255, 0, 0); 
+}
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(255, 0, 0),
+                0 0 25px rgb(255, 0, 0),
+                0 0 50px rgb(255, 0, 0),
+                0 0 100px rgb(255, 0, 0);
+}
+  

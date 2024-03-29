@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="" id="formulaire">
+        <h1>Inscription</h1>
+        <p>Veuillez remplir ce formulaire avec les informations requises</p>
+        <fieldset>
+            <label for="nom">Saisir votre nom :</label>
+            <div class="input-container">
+                <input type="text" id="nom" placeholder="Écrivez ici" required>
+                <span id="text" class="validation-message"></span>
+            </div>
+            <label for="prenom">Saisir votre prénom :</label>
+            <div class="input-container">
+                <input type="text" id="prenom" placeholder="Écrivez ici" required>
+                <span id="text_pre" class="validation-message"></span>
+            </div>
+            <label for="age">Saisir votre âge :</label>
+            <div class="input-container">
+                <input type="text" id="age" placeholder="Écrivez ici" required min="18" max="120">
+                <span id="text_age" class="validation-message"></span>
+            </div>
+            <label for="numero">Saisir votre numéro :</label>
+            <div class="input-container">
+                <input type="text" id="numero" placeholder="Écrivez ici" required>
+                <span id="text_num" class="validation-message"></span>
+            </div>
+            <label for="email">Saisir votre email :</label>
+            <div class="input-container">
+                <input type="text" id="email" placeholder="Écrivez ici" required>
+                <span id="text_email" class="validation-message"></span>
+            </div>
+            <label for="password">Saisir un mot de passe :</label>
+            <div class="input-container">
+                <input type="password" id="password" placeholder="Écrivez ici" pattern="[a-z 0-9]{8,}" required>
+                <span id="text_password" class="validation-message"></span>
+            </div>
+        </fieldset>
+        <button class="shadow__btn" value="envoyer" onclick="validerFormulaire()" onclick="validateForm(event)">
+            Envoyer
+        </button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
